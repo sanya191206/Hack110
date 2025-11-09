@@ -7,10 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+    <div class="page-overlay"></div>
+  <!-- HEADER -->
+<header>
+  <div class="header-content">
+    <div class="steam"></div>
     <h1>Beneath the Brew</h1>
-    <p>Guided by Master Wu – Connecting through Culture, One Cup at a Time</p>
-  </header>
+    <hr class="divider">
+    <p>Discover the World Through Tea – Taste the Stories That Unite Us.</p>
+  </div>
+</header>
+
 
   <nav>
     <a href="#" onclick="showPage('home')">Home</a>
@@ -26,11 +33,10 @@
         <p>“Ah... the tea reveals more than taste,” says Master Wu.  
         “It whispers of the earth, of people, of journeys untold.”</p>
         <p>
-          Guided by Master Wu, we explore teas from ten regions around the world —  
-          each cup telling a story of resilience, culture, and connection.
+          Guided by Master Wu, we embark on a journey across ten lands - from the misty hills of Kashmir to the red earth of Sudan - each with a story steeped in both beauty and hardship. This page is for those who seek not just flavor, but understanding; for those who believe that expanding one’s tea palette is also expanding one’s empathy. When you sip the teas of these regions, you honor their people - farmers, families, and artisans who have preserved their craft through war, poverty, and change. In tasting their tea, you taste their resilience, their culture, and their hope - one cup at a time.
         </p>
         <button onclick="showPage('teas')" class="main-btn">
-          Begin Your Journey 🍵
+          Begin Your Journey
         </button>
       </div>
     </div>
@@ -188,7 +194,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Kashmir</h3>
-          <a href="https://www.redcross.org" target="_blank">Donate</a>
+          <a href="https://www1.hhrd.org/Campaigns/Kashmir-Relief" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -212,7 +218,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Congo</h3>
-          <a href="https://www.unicef.org/drcongo" target="_blank">Donate</a>
+          <a href="https://crisisrelief.un.org/en/donate-drc-crisis" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -235,7 +241,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Yemen</h3>
-          <a href="https://www.unicef.org/yemen" target="_blank">Donate</a>
+          <a href="https://irusa.org/middle-east/yemen/" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -259,7 +265,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Sri Lanka</h3>
-          <a href="https://www.unicef.org/srilanka" target="_blank">Donate</a>
+          <a href="https://www.undp.org/srilanka/donate" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -283,7 +289,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Sudan</h3>
-          <a href="https://www.unicef.org/sudan" target="_blank">Donate</a>
+          <a href="https://www.rescue.org/country/sudan" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -307,7 +313,7 @@
         </ul>
         <div class="donation-box">
           <h3>Support Afghanistan</h3>
-          <a href="https://www.unhcr.org/afghanistan" target="_blank">Donate</a>
+          <a href="https://donate.unhcr.org/int/en/afghanistan-situation" target="_blank">Donate</a>
         </div>
       </div>
     </div>
@@ -338,11 +344,21 @@
 
     <script>
       function showPage(pageId) {
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.classList.remove('active'));
-        document.getElementById(pageId).classList.add('active');
-        window.scrollTo(0, 0);
-      }
+  const overlay = document.querySelector('.page-overlay');
+  overlay.style.opacity = '1'; // fade mist in
+  
+  setTimeout(() => {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+
+    const targetPage = document.getElementById(pageId);
+    targetPage.classList.add('active');
+
+    overlay.style.opacity = '0'; // fade mist out
+    window.scrollTo(0, 0);
+  }, 400); // matches the CSS transition timing
+}
+
     </script>
   </body>
 </html>
