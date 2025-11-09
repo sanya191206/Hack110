@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beneath the Brew</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Beneath the Brew</h1>
+    <p>Guided by Master Wu – Connecting through Culture, One Cup at a Time</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('teas')">Explore Teas</a>
+  </nav>
+
+  <div class="container">
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+      <div class="home-section">
+        <img src="master_wu.jpg" alt="Master Wu" class="wu-image" />
+        <h2>Welcome to Beneath the Brew</h2>
+        <p>“Ah... the tea reveals more than taste,” says Master Wu.  
+        “It whispers of the earth, of people, of journeys untold.”</p>
+        <p>
+          Guided by Master Wu, we explore teas from ten regions around the world —  
+          each cup telling a story of resilience, culture, and connection.
+        </p>
+        <button onclick="showPage('teas')" class="main-btn">
+          Begin Your Journey 🍵
+        </button>
+      </div>
+    </div>
+
+    <!-- TEAS PAGE -->
+    <div id="teas" class="page">
+      <h2 style="text-align: center; color: #2c5f4f; margin-bottom: 2rem;">Master Wu’s Selection</h2>
+      <div class="tea-grid">
+        <div class="tea-card">
+          <h3>Myanmar Green Tea</h3>
+          <img src="myanmar_tea.webp" alt="Myanmar tea" class="page_pics" />
+          <button onclick="showPage('myanmar')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Syrian Sage Tea</h3>
+          <img src="syrian_tea.webp" alt="Syrian tea" class="page_pics" />
+          <button onclick="showPage('syria')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Palestinian Mint Tea</h3>
+          <img src="palestinian_tea.jpg" alt="Palestinian tea" class="page_pics" />
+          <button onclick="showPage('palestine')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Kashmiri Kahwa</h3>
+          <img src="kashmiri_tea.jpg" alt="Kashmiri tea" class="page_pics" />
+          <button onclick="showPage('kashmir')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Congolese Herbal Tea</h3>
+          <img src="congo_tea.jpg" alt="Congo tea" class="page_pics" />
+          <button onclick="showPage('congo')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Yemeni Spiced Tea</h3>
+          <img src="yemen_tea.jpg" alt="Yemeni tea" class="page_pics" />
+          <button onclick="showPage('yemen')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Sri Lankan Ceylon Tea</h3>
+          <img src="srilanka_tea.png" alt="Sri Lankan tea" class="page_pics" />
+          <button onclick="showPage('srilanka')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Sudanese Karkade Tea</h3>
+          <img src="sudani_tea.png" alt="Sudanese tea" class="page_pics" />
+          <button onclick="showPage('sudan')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Afghan Green Tea</h3>
+          <img src="afghan_tea.jpg" alt="Afghan tea" class="page_pics" />
+          <button onclick="showPage('afghanistan')" class="main-btn">Let's Taste!</button>
+        </div>
+        <div class="tea-card">
+          <h3>Ethiopian Coffee-Tea Blend</h3>
+          <img src="ethiopian-tea.jpg" alt="Ethiopian tea" class="page_pics" />
+          <button onclick="showPage('ethiopia')" class="main-btn">Let's Taste!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MYANMAR -->
+    <div id="myanmar" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="myanmar_flag.png" alt="Myanmar flag" class="flag-small" />
+        <h2>Myanmar Green Tea</h2>
+        <div class="tea-images">
+          <img src="myanmar_tea.webp" alt="Myanmar tea" class="page_pics" />
+          <img src="myanmar_children.webp" alt="Myanmar children" class="page_pics" />
+        </div>
+        <p>Laphet (fermented tea leaves) have been cultivated for centuries in the lush Shan Hills of Myanmar, where the leaf is not only brewed but eaten as part of a ceremonial salad symbolizing community and hospitality. The tradition ties deeply into local culture, with entire families involved in small-scale tea production passed down across generations. Since the military coup in 2021 and accompanying conflict, Myanmar has been thrust into a humanitarian crisis: tea farmers face disrupted production, land seizures, and unsafe working conditions for many in ethnic minority regions. Entire villages have been displaced and traditional supply chains broken, making it harder for local producers to sustain their livelihoods.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tbsp green tea leaves</li>
+          <li>1 cup hot water (80°C)</li>
+          <li>Steep 3–4 minutes</li>
+          <li>Serve warm or chilled with sesame seeds & roasted peanuts</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Myanmar</h3>
+          <p>Help displaced tea farmers rebuild their lives.</p>
+          <a href="https://www.unhcr.org/myanmar" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SYRIA -->
+    <div id="syria" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="syrian_flag.png" alt="Syrian flag" class="flag-small" />
+        <h2>Syrian Sage Tea</h2>
+        <div class="tea-images">
+          <img src="syrian_tea.webp" alt="Syrian sage tea" class="page_pics" />
+          <img src="syrian_child.jpg" alt="Syrian children" class="page_pics" />
+        </div>
+        <p>Maramiya (sage tea) is a time-honored herbal infusion in Syria, grown in home gardens and on wild slopes, served to guests in living rooms as a gesture of healing, comfort and connection. It reflects multi-generational skincare and wellness traditions in Syrian households, connecting people with the land and their heritage. Syria’s long-running conflict, now over a decade old, has devastated communities: millions are internally displaced, infrastructure is shattered, and basic services remain scarce. Humanitarian agencies estimate that millions more Syrians require aid, and up to several hundred thousand have lost their lives—making the continuity of culture, such as tea-sharing, both resilient and at risk.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tsp dried sage</li>
+          <li>1 cup boiling water</li>
+          <li>Steep 5 minutes</li>
+          <li>Add honey and lemon</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Syria</h3>
+          <a href="https://www.rescue.org/country/syria" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PALESTINE -->
+    <div id="palestine" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="palestinian_flag.jpg" alt="Palestinian flag" class="flag-small" />
+        <h2>Palestinian Mint Tea</h2>
+        <div class="tea-images">
+          <img src="palestinian_tea.jpg" alt="Palestinian tea" class="page_pics" />
+          <img src="palestinian_child.jpg" alt="Palestinian children" class="page_pics" />
+        </div>
+        <p>Shai bil Na’na (mint tea) is an essential part of Palestinian hospitality: sweetened with sugar, offered regularly to neighbours and visitors, it embodies welcome, tradition and identity amidst adversity. The mint-laden brew is tied to olive-grove homes, communal gatherings and the endurance of cultural roots under pressure. The Palestinian territories endure immense hardship: unemployment reached ~24 % in 2022 and ~31 % under ILO under-utilisation standards. Restricted movement, economic blockade, house demolitions, and limited access to resources severely impact daily life for many families trying to maintain agrarian or tea-host-home traditions.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tsp black tea</li>
+          <li>Fresh mint sprigs</li>
+          <li>1–2 tsp sugar</li>
+          <li>Boil, pour, and serve with love</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Palestine</h3>
+          <a href="https://www.pcrf.net/" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- KASHMIR -->
+    <div id="kashmir" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="kashmir_flag.png" alt="Kashmir flag" class="flag-small" />
+        <h2>Kashmiri Kahwa</h2>
+        <div class="tea-images">
+          <img src="kashmiri_tea.jpg" alt="Kashmiri Kahwa" class="page_pics" />
+          <img src="shutterstock_1450848818-1.jpg" alt="Kashmir children" class="page_pics" />
+        </div>
+        <p>Kahwa is a fragrant green-tea blend with saffron, cardamom, cinnamon and almonds, traditionally brewed in samovars in the Himalayan valley of Kashmir. It is a ritual of warmth and hospitality in a region long accustomed to cold winters, family gatherings and cultural resilience. Kashmir has been deeply affected by decades of political and military conflict, curfews, communications blackouts and restrictions on movement, which all impact livelihoods and community cohesion. Even tea-growing and home tea rituals are under pressure when families face economic uncertainty, disrupted supply chains and restricted access to their fields or harvests.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 cup water</li>
+          <li>1 tsp green tea</li>
+          <li>2 cardamom pods, a pinch of saffron, crushed almonds</li>
+          <li>Simmer gently 3–4 mins</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Kashmir</h3>
+          <a href="https://www.redcross.org" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONGO -->
+    <div id="congo" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="congo_flag.png" alt="Congo flag" class="flag-small" />
+        <h2>Congolese Herbal Tea</h2>
+        <div class="tea-images">
+          <img src="congo_tea.jpg" alt="Congo herbal tea" class="page_pics" />
+          <img src="congo_chilld.jpeg" alt="Congo children" class="page_pics" />
+        </div>
+        <p>In the Democratic Republic of the Congo, herbal teas made from lemongrass, ginger and indigenous herbs embody centuries of community-based healing practices and local knowledge of the forest. These teas are not just for flavour but for wellness and storytelling, linking present generations with ancestral traditions of plant medicine and social gathering. The DRC faces one of the largest displacement crises in the world — nearly seven million internally displaced people as of early 2025, some 90 % of them due to conflict. NRC Arable land is destroyed, access to clean water and sanitation is limited in many IDP sites, and many small producers are cut off from markets, putting traditional tea production under further strain.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>Fresh lemongrass or 1 tsp dried</li>
+          <li>Boil for 5 minutes</li>
+          <li>Add ginger and honey</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Congo</h3>
+          <a href="https://www.unicef.org/drcongo" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- YEMEN -->
+    <div id="yemen" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="yemen_flag.png" alt="Yemen flag" class="flag-small" />
+        <h2>Yemeni Spiced Tea</h2>
+        <div class="tea-images">
+          <img src="yemen_tea.jpg" alt="Yemen tea" class="page_pics" />
+          <img src="yemen_children.jpg" alt="Yemen children" class="page_pics" />
+        </div>
+        <p>Shai Adeni is a richly spiced Yemeni black tea infused with cardamom, cloves and cinnamon, traditionally served strong and sweet alongside dates in tea-houses that are hubs of social life. It is a gesture of hospitality and shared calm in a country where the everyday is often anything but calm. Yemen is now enduring one of the worst humanitarian crises globally: an estimated 19.5 million people (over half the population) need humanitarian assistance in 2025, including some 4.8 million internally displaced persons. Health facilities are collapsing, food insecurity is rampant, and the tea tradition persists as a symbol of normalcy amid collapse.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>Black tea + cardamom + cinnamon stick</li>
+          <li>Boil with milk & sugar for 5 minutes</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Yemen</h3>
+          <a href="https://www.unicef.org/yemen" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SRI LANKA -->
+    <div id="srilanka" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="srilanka_flag.png" alt="Sri Lanka flag" class="flag-small" />
+        <h2>Sri Lankan Ceylon Tea</h2>
+        <div class="tea-images">
+          <img src="srilanka_tea.png" alt="Ceylon tea" class="page_pics" />
+          <img src="srilanka_children.jpg" alt="Sri Lanka children" class="page_pics" />
+        </div>
+        <p>Ceylon Tea—grown in Sri Lanka’s central highlands since the 19th century—is globally celebrated for its bright colour, brisk flavour and premium quality. The tradition is woven into the identity of the tea-estate communities, many of whom are Tamil women whose families have worked the fields for generations. Yet the industry stands at a cross-roads: while Sri Lanka exported about 252 million kg of tea in 2023 earning over USD 1.2 billion, the labour force is shrinking as estate workers migrate or quit due to low wages and poor conditions. At the same time, Sri Lanka is navigating an economic crisis, skyrocketing fertiliser and fuel costs, and labor issues which all put pressure on both the tradition and the sustainability of the tea sector.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tsp black Ceylon tea</li>
+          <li>200ml boiling water</li>
+          <li>Steep 3–5 mins, add milk or lemon</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Sri Lanka</h3>
+          <a href="https://www.unicef.org/srilanka" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUDAN -->
+    <div id="sudan" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="sudan_flag.png" alt="Sudan flag" class="flag-small" />
+        <h2>Sudanese Karkade Tea</h2>
+        <div class="tea-images">
+          <img src="sudani_tea.png" alt="Karkade tea" class="page_pics" />
+          <img src="sudani_children.jpg" alt="Sudan children" class="page_pics" />
+        </div>
+        <p>Karkade (hibiscus tea) is beloved across Sudan: deep crimson, tart, often sweetened, and served at gatherings as a gesture of hospitality, celebration and healing. The cultivation of hibiscus flowers and communal tea-drinking are part of social fabric that this current crisis strains. Sudan’s conflict since April 2023 has produced massive displacement: as of early 2025, about 11.4 million internally displaced persons and roughly 3 million refugees abroad. Basic services are broken, food insecurity is at catastrophic levels, and traditional tea growing and social tea rituals are deeply disrupted by displacement and instability.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tbsp dried hibiscus</li>
+          <li>2 cups water + sugar to taste</li>
+          <li>Boil 5 mins, serve hot or cold</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Sudan</h3>
+          <a href="https://www.unicef.org/sudan" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AFGHANISTAN -->
+    <div id="afghanistan" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="Afghanistan.jpg" alt="Afghan flag" class="flag-small" />
+        <h2>Afghan Green Tea</h2>
+        <div class="tea-images">
+          <img src="afghan_tea.jpg" alt="Afghan green tea" class="page_pics" />
+          <img src="afghan_children.jpg" alt="Afghan children" class="page_pics" />
+        </div>
+        <p>Chai Sabz (green tea often with cardamom) is central to Afghan hospitality: served in chaikhanas (tea-houses), in homes and at gatherings, it reflects tradition, community, respect and comfort. Tea rituals in Afghanistan link people across generations, and the act of offering tea is a sign of mutual trust and identity. Afghanistan is enduring deep humanitarian and development crises: around 9.5 million people face severe food insecurity in 2025, and 3.5 million children under 5 are expected to be malnourished. Political instability, economic collapse and drought-driven crop failures all hamper both tea-cultivation and the social rituals around tea which sustain connection under hardship.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>1 tsp green tea</li>
+          <li>Pinch of cardamom</li>
+          <li>Boil, steep 3 mins, add sugar</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Afghanistan</h3>
+          <a href="https://www.unhcr.org/afghanistan" target="_blank">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ETHIOPIA -->
+    <div id="ethiopia" class="page">
+      <a href="#" onclick="showPage('teas')" class="back-btn">← Back</a>
+      <div class="tea-detail">
+        <img src="ethiopia_flag.png" alt="Ethiopian flag" class="flag-small" />
+        <h2>Ethiopian Coffee-Tea Blend</h2>
+        <div class="tea-images">
+          <img src="ethiopian-tea.jpg" alt="Ethiopian coffee-tea" class="page_pics" />
+          <img src="ethiopian_tea.jpg" alt="Ethiopian children" class="page_pics" />
+        </div>
+        <p> In Ethiopia, although coffee reigns supreme as the birthplace of the bean, tea and herbal blends have long been part of daily life—blending indigenous herbs and sometimes tea or coffee in ceremonial and communal settings. These blends connect people to land, tradition and ritual of hospitality which stretch back generations. Still, Ethiopia’s stability is challenged: conflict in the Tigray region has displaced millions, damaged infrastructure and strained food systems; many communities face food insecurity, disrupted livelihoods and limited access to services. The tea-and-herb traditions persist as small acts of continuity even as much is upended.</p>
+        <h3>Recipe</h3>
+        <ul>
+          <li>½ tsp black tea + ½ tsp ground coffee</li>
+          <li>Simmer 3–4 mins with sugar</li>
+          <li>Strain and serve small and strong</li>
+        </ul>
+        <div class="donation-box">
+          <h3>Support Ethiopia</h3>
+          <a href="https://www.wfp.org/countries/ethiopia" target="_blank">Donate to Ethiopia Relief</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        window.scrollTo(0, 0);
+      }
+    </script>
+  </body>
+</html>
